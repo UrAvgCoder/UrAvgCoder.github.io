@@ -1,1 +1,11 @@
 # UrAvgCoder.github.io
+- Fully refactored the webpage.
+- Changed favicon to match better.
+- Fixed typos(Thanks for reporting).
+- Added smoothing to the scrolling behavior.
+- Changed how the webpage functions using 'Scroll' rather than just buttons.
+- Added 'Contact Me' page.
+- Redesigned 'About Me' page.
+- Added 'Company logos' into the project.
+- Added Dark Mode icons.
+- Added 'particles.js'.
