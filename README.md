@@ -5,6 +5,7 @@
 - Changed the credits section to make more sense, and changed the fa icons.
 - Added an extra project to the project list.
 - Changed icons of Contact Me section.
+- Fixed Grammatical errors and typos.
 
 
 ## 21/03/2019
