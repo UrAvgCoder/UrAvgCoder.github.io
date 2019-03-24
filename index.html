@@ -14,9 +14,21 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
 <style>
+
+hr.divider {
+	width: 750px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+a.test{
+	color: grey;
+}
+
 .demo a {
 	position: absolute;
 	bottom: 20px;
@@ -26,7 +38,7 @@
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 	color: #fff;
-	font : normal 400 20px/1 'Josefin Sans', sans-serif;
+	font : normal 400 20px/1 'Righteous', cursive;
 	letter-spacing: .1em;
 	text-decoration: none;
 	transition: opacity .3s;
@@ -36,26 +48,20 @@
 	opacity: .5;
 }
 
-/*#particles-js {
-	position: absolute;
-  width: 100%;
-  height: 100%;
-}*/
-
 .animation_background {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
 }
 
 </style>
 
 <body>
-<div id="particles-js" class="animation_background"></div>
+	<div id="particles-js" class="animation_background"></div>
 	<!--================ Start Scroll Area =================-->
 
 	<section id="section01" class="demo">
@@ -92,7 +98,7 @@
 
 	<div class="modal fade" id="myModal">
 		<div class="container-fluid">
-			<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-dialog modal-dialog-vertical">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h4 class="modal-title">Discord Tag</h4>
@@ -105,8 +111,23 @@
 			</div>
 		</div>
 	</div>
-</div>
-</div>
+
+
+		<div class="modal fade" id="myModal2">
+			<div class="container-fluid">
+				<div class="modal-dialog modal-dialog-vertical">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Coming Soon</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<p class="text-center"><strong>Will be adding screenshots/video clips of my basic iOS apps soon!</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 <!--================ End Model(popup) Area =================-->
@@ -194,7 +215,7 @@
 						</div>
 					</div>
 				</div>
-				<h3 class="text-center"> To know more about me, download my Resume below. </h3>
+				<h3 class="text-center"> To know more, please download my Resume below. </h3>
 				<div class="text-center">
 					<a class="primary_btn" href="http://ge.tt/6hbX16v2"><span>Download Resume</span></a>
 				</div>
@@ -202,9 +223,9 @@
 		</div>
 	</section>
 	<!--================ End About Area =================-->
-
+	<hr class="divider" id="projects"><br><br>
 	<!--================Start Projects Area =================-->
-	<section class="portfolio_area" id="projects">
+	<section class="portfolio_area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text center">
@@ -216,164 +237,154 @@
 			<div class="filters-content">
 				<div class="row portfolio-grid justify-content-center">
 					<div class="col-lg-4 col-md-6 all popular">
-						<div class="portfolio_box">
-
-							<div class="feature_item">
-								<img src="img/projects/database.png" class="img-gal" alt="">
-								<h4>School Management System</h4>
-								<p>DBMS, Mini Project</p>
-							</div>
+						<div class="feature_item">
+							<img src="img/projects/database.png" class="img-gal" alt="">
+							<h4>School Management System</h4>
+							<p>DBMS, Mini Project</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all popular">
+						<div class="feature_item">
+							<img src="img/projects/ux.png" class="img-gal" alt="">
+							<h4>Mouse Interactive Game</h4>
+							<p>Computer Graphics, Mini Project</p>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-
+						<div class="feature_item">
+							<a class ="test" href="https://github.com/UrAvgCoder/onlinetest"><img src="img/projects/online-test.png" class="img-gal" alt="">
+								<h4>Online Test</h4>
+								<p>bitsPlease Tech Club -- dashboard designer</p></a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
 							<div class="feature_item">
-								<img src="img/projects/ux.png" class="img-gal" alt="">
-								<h4>Mouse Interactive Game</h4>
-								<p>Computer Graphics, Mini Project</p>
+								<a class ="test" href="" data-toggle="modal" data-target="#myModal2"><img src="img/projects/ios-app.png" class="img-gal" alt="">
+									<h4>(Starter) iOS App Developer</h4>
+									<p>Self-learnt from different sources, mostly from Udemy Course.</p></a>
+								</div>
+							</div>
+					</div>
+				</div>
+			</section>
+			<!--================End Projects Area =================-->
+
+
+			<hr class="divider" id="contactSection"><br>
+			<!--================Contact Me Area =================-->
+			<section class="features_area">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 text-center">
+							<div class="main_title">
+								<h2>Contact me </h2>
+								<p>
+									Here's how you can get in touch with me
+								</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-		<!--================End Projects Area =================-->
-
-
-
-		<!--================Contact Me Area =================-->
-		<section class="features_area" id="contactSection">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-8 text-center">
-						<div class="main_title">
-							<h2>Contact me </h2>
-							<p>
-								Here's how you can get in touch with me
-							</p>
+					<div class="row feature_inner">
+						<div class="col-lg-3 col-md-6">
+							<a class ="test" href="https://www.facebook.com/UrAvgCoder">
+								<div class="feature_item">
+									<img src="img/logos/facebook.png" alt="">
+									<h4>Facebook</h4>
+									<p>Add me on Facebook.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<a class ="test" href="https://www.instagram.com/ismartgeek/"><div class="feature_item">
+								<img src="img/logos/instagram.png" alt="">
+								<h4>Instagram</h4>
+								<p>DM me on instagram.</p>
+							</div></a>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<a class ="test" href="" data-toggle="modal" data-target="#myModal"><div class="feature_item">
+								<img src="img/logos/discord.png" alt="">
+								<h4>Discord</h4>
+								<p>Contact me on Discord.</p>
+							</div></a>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<a class ="test" href="https://github.com/UrAvgCoder"><div class="feature_item">
+								<img src="img/logos/github.png" alt="">
+								<h4>GitHub</h4>
+								<p>Follow me on GitHub.</p>
+							</div></a>
 						</div>
 					</div>
 				</div>
-				<div class="row feature_inner">
-					<div class="col-lg-3 col-md-6">
-						<a href="https://www.facebook.com/UrAvgCoder">
-							<div class="feature_item">
-								<img src="img/logos/facebook.png" alt="">
-								<h4>Facebook</h4>
-								<p>Add me on Facebook.</p>
+			</section>
+
+			<!--================Contact Me Area =================-->
+
+
+
+			<hr class="divider" id="credits"><br>
+			<!--================Footer Area =================-->
+			<footer class="footer_area">
+				<div class="container">
+
+					<div class="row justify-content-center">
+						<div class="col-lg-12">
+							<div class="footer_top flex-column">
+								<div class="footer_logo">
+									<a href="#homeBannner">
+										<h3 style="font-family: Lato ">"SMART WORK OVER HARD WORK"</h3></a>
+									</div>
+								</div>
 							</div>
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="https://www.instagram.com/ismartgeek/"><div class="feature_item">
-							<img src="img/logos/instagram.png" alt="">
-							<h4>Instagram</h4>
-							<p>DM me on instagram.</p>
-						</div></a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="" data-toggle="modal" data-target="#myModal"><div class="feature_item">
-							<img src="img/logos/discord.png" alt="">
-							<h4>Discord</h4>
-							<p>Contact me on Discord.</p>
-						</div></a>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<a href="https://github.com/UrAvgCoder"><div class="feature_item">
-							<img src="img/logos/github.png" alt="">
-							<h4>GitHub</h4>
-							<p>Follow me on GitHub.</p>
-						</div></a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!--================Contact Me Area =================-->
-
-
-
-
-		<!--================Footer Area =================-->
-		<footer class="footer_area">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-12">
-						<div class="footer_top flex-column">
-							<div class="footer_logo">
-								<a href="#homeBannner">
-									<img src="img/logo_me.png" alt="">
-								</a>
-								<h1 style="font-family: Righteous">"SMART WORK OVER HARD WORK"</h1>
+							</div>
+							<div class="row footer_bottom justify-content-center">
+								<p class="col-lg-12 col-sm-12 footer-text">
+									Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This design was made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> & <a href="https://github.com/UrAvgCoder" target="_blank">Nireekshith</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="row footer_bottom justify-content-center">
-					<p class="col-lg-12 col-sm-12 footer-text">
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This design was made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-					</div>
-				</div>
-			</div>
-			</footer>
-			<!--================End Footer Area =================-->
+					</footer>
+					<!--================End Footer Area =================-->
 
-			<!-- Optional JavaScript -->
-			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-			<script src="js/jquery-3.2.1.min.js"></script>
-			<script src="js/popper.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/stellar.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>
-			<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-			<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-			<script src="vendors/isotope/isotope-min.js"></script>
-			<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/mail-script.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+					<!-- Optional JavaScript -->
+					<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+					<script src="js/jquery-3.2.1.min.js"></script>
+					<script src="js/popper.js"></script>
+					<script src="js/bootstrap.min.js"></script>
+					<script src="js/stellar.js"></script>
+					<script src="js/jquery.magnific-popup.min.js"></script>
+					<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+					<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+					<script src="vendors/isotope/isotope-min.js"></script>
+					<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+					<script src="js/jquery.ajaxchimp.min.js"></script>
+					<script src="js/mail-script.js"></script>
+					<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-			<!--================Smooth Scrolling Start =================-->
-			<script>
+					<!--================Smooth Scrolling Start =================-->
+					<script>
 
-			particlesJS.load('particles-js', 'assets/particles-js.json', function() {
-				console.log('callback - particles.js config loaded');
-			});
+					particlesJS.load('particles-js', 'assets/particles-js.json', function() {
+						console.log('callback - particles.js config loaded');
+					});
 
-			$(function() {
-				$('a[href*=#]').on('click', function(e) {
-					e.preventDefault();
-					$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-				});
-			});
-
-
-			$(document).ready(function(){
-				// Add smooth scrolling to all links
-				$("a").on('click', function(event) {
-
-					// Make sure this.hash has a value before overriding default behavior
-					if (this.hash !== "") {
-						// Prevent default anchor click behavior
-						event.preventDefault();
-
-						// Store hash
-						var hash = this.hash;
-
-						// Using jQuery's animate() method to add smooth page scroll
-						// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-						$('html, body').animate({
-							scrollTop: $(hash).offset().top
-						}, 800, function(){
-
-							// Add hash (#) to URL when done scrolling (default click behavior)
-							window.location.hash = hash;
+					$(document).ready(function(){
+						$("a").on('click', function(event) {
+							if (this.hash !== "") {
+								event.preventDefault();
+								var hash = this.hash;
+								$('html, body').animate({
+									scrollTop: $(hash).offset().top
+								}, 800, function(){
+									window.location.hash = hash;
+								});
+							}
 						});
-					} // End if
-				});
-			});
-			</script>
-			<!--================ Smooth Scrolling Ends =================-->
+					});
 
-		</body>
-		</html>
+					</script>
+					<!--================ Smooth Scrolling Ends =================-->
+
+				</body>
+				</html>
